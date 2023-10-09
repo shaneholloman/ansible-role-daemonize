@@ -1,6 +1,6 @@
 # Ansible Role: Daemonize
 
-[![CI](https://github.com/shaneholloman-org/ansible-role-daemonize/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman-org/ansible-role-daemonize/actions/workflows/ci.yml)
+[![CI](https://github.com/shaneholloman/ansible-role-daemonize/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-daemonize/actions/workflows/ci.yml)
 
 Installs [Daemonize](http://software.clapper.org/daemonize/), a tool for running commands as a Unix daemon.
 
@@ -41,4 +41,3 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2023
-
