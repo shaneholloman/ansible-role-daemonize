@@ -20,9 +20,9 @@
   register: daemonize_installed
 
 - name: Check daemonize version.
-  ansible.builtin.command: daemonize --version
+  ansible.builtin.shell: daemonize --version || echo "daemonize, version"
   register: daemonize_version_check
-  changed_when: daemonize_version_check.stdout != daemonize_version
+  changed_when: "'daemonize, version ' + daemonize_version not in daemonize_version_check.stderr"
   ignore_errors: true
   when: daemonize_installed.rc == 0
 
