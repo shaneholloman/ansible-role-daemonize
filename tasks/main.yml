@@ -10,7 +10,7 @@
     src: "{{ workspace }}/daemonize-{{ daemonize_version }}.tar.gz"
     dest: "{{ workspace }}"
     creates: "{{ workspace }}/daemonize-release-{{ daemonize_version }}/INSTALL"
-    copy: false
+    remote_src: no
     mode: '0755'
 
 - name: Check if daemonize is installed.
