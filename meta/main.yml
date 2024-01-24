@@ -1,13 +1,12 @@
 ---
-dependencies: []
-
 galaxy_info:
   role_name: daemonize
   author: shaneholloman
   description: "Daemonize for Unix-like operating systems"
   company: "shaneholloman"
-  license: "license (BSD, MIT)"
-  min_ansible_version: "2.10"
+  license: "license (Unlicense)"
+  min_ansible_version: "2.12"
+
   platforms:
     - name: Ubuntu
       versions:
@@ -18,8 +17,11 @@ galaxy_info:
     - name: GenericUNIX
       versions:
         - all
+
   galaxy_tags:
     - development
     - web
     - system
     - mail
+
+dependencies: []

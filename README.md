@@ -1,4 +1,4 @@
-# Ansible Role: Daemonize
+# Ansible Role: `daemonize`
 
 [![CI](https://github.com/shaneholloman/ansible-role-daemonize/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-daemonize/actions/workflows/ci.yml)
 
@@ -12,11 +12,15 @@ Make sure you have `gcc` or other build tools installed (e.g. `yum install make 
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    workspace: /root
+```yml
+workspace: /root
+```
 
 The location where code will be downloaded and compiled.
 
-    daemonize_version: 1.7.5
+```yml
+daemonize_version: '1.7.5'
+```
 
 The daemonize release version to install.
 
@@ -30,13 +34,15 @@ None.
 
 ## Example Playbook
 
-    - hosts: servers
-      roles:
-        - { role: shaneholloman.daemonize }
+```yml
+- hosts: servers
+    roles:
+    - { role: shaneholloman.daemonize }
+```
 
 ## License
 
-MIT / BSD
+Unlicense
 
 ## Author Information
 
